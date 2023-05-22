@@ -1,4 +1,5 @@
 $(function () {
+  //gallery image
   $(".main__card--image--lower").on("click", "img", function () {
     // console.log($(this).attr("class"));
     $(this).addClass("selectedimg");
@@ -15,5 +16,21 @@ $(function () {
     $(".main__card--image--upper img")
       .not(".p" + t + "_big")
       .removeClass("d-block");
+  });
+
+  //counter
+  let count = 0;
+  $(".counter").on("click", "img", function () {
+    if ($(this).attr("id") == "minus") {
+      if (count > 0) {
+        count--;
+      } else {
+        return;
+      }
+      $(".counter span").html(count);
+    } else if ($(this).attr("id") == "plus") {
+      count++;
+      $(".counter span").html(count);
+    }
   });
 });

@@ -74,8 +74,8 @@ main {
             object-fit: contain;
             border-radius: 1rem;
             cursor: pointer;
-            &:hover{
-              opacity: 50%;
+            &:hover {
+              opacity: 80%;
             }
           }
         }
@@ -115,28 +115,33 @@ main {
               font-weight: $font__bold;
             }
           }
-          .priceO{
-            p{
+          .priceO {
+            p {
               color: $dgray_blue;
               text-decoration: line-through;
               font-weight: $font__bold;
             }
-            
           }
         }
-        &--end{
-          .counter{
+        &--end {
+          gap: 1rem;
+          .counter {
             background-color: $lgray__blue;
-            .plus, .minus{
+            width: 100%;
+            text-align: center;
+            .plus,
+            .minus {
               cursor: pointer;
             }
           }
-          .addCart{
+          .addCart {
             background-color: $orange;
             color: $white;
             border-radius: 0.5rem;
             cursor: pointer;
             user-select: none;
+            width: 100%;
+            text-align: center;
           }
         }
       }
@@ -144,17 +149,7 @@ main {
   }
 }
 
-.selectedimg{
-  position: relative;
-  &:after{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    background: rgba(255,255,255,0.7);
-  }
+.selectedimg {
+  opacity: 0.8;
+  border: 3px solid $orange;
 }

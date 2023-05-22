@@ -89,7 +89,7 @@ main .main__card--image--lower img {
   cursor: pointer;
 }
 main .main__card--image--lower img:hover {
-  opacity: 50%;
+  opacity: 80%;
 }
 main .main__card--info {
   width: 70%;
@@ -131,10 +131,16 @@ main .main__card--info--cost .priceO p {
   text-decoration: line-through;
   font-weight: 700;
 }
+main .main__card--info--end {
+  gap: 1rem;
+}
 main .main__card--info--end .counter {
   background-color: hsl(223, 64%, 98%);
+  width: 100%;
+  text-align: center;
 }
-main .main__card--info--end .counter .plus, main .main__card--info--end .counter .minus {
+main .main__card--info--end .counter .plus,
+main .main__card--info--end .counter .minus {
   cursor: pointer;
 }
 main .main__card--info--end .addCart {
@@ -143,19 +149,11 @@ main .main__card--info--end .addCart {
   border-radius: 0.5rem;
   cursor: pointer;
   user-select: none;
+  width: 100%;
+  text-align: center;
 }
 
 .selectedimg {
-  position: relative;
-}
-.selectedimg:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  background: rgba(255, 255, 255, 0.7);
+  opacity: 0.8;
+  border: 3px solid hsl(26, 100%, 55%);
 }
