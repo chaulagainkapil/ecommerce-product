@@ -41,7 +41,7 @@ header .nav__left--logo img {
 }
 header .nav__left--menu ul {
   list-style: none;
-  gap: 2rem;
+  gap: 1rem;
 }
 header .nav__left--menu ul li a {
   position: relative;
@@ -56,6 +56,20 @@ header .nav__left--menu ul li a:hover::after {
   width: 100%;
   transform: translateY(-50%);
 }
+header .nav__left--button {
+  position: relative;
+  z-index: 6;
+}
+header .nav__left--button--close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  transform: translateY(-50%);
+}
+header .nav__right--cart {
+  cursor: pointer;
+}
 header .nav__right--cart img {
   width: auto;
   height: 1rem;
@@ -65,6 +79,53 @@ header .nav__right--avatar img {
   width: 2.5rem;
   height: 2.5rem;
   object-fit: contain;
+}
+header .nav .cartBox {
+  top: 2.6rem;
+  right: 0;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1rem;
+  background: white;
+  width: 400px;
+}
+header .nav .cartBox__header {
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+header .nav .cartBox__header p {
+  font-weight: 700;
+  color: hsl(220, 13%, 13%);
+}
+header .nav .cartBox__body--empty p {
+  color: hsl(219, 9%, 45%);
+  font-weight: 700;
+}
+header .nav .cartBox__body--notE {
+  color: hsl(219, 9%, 45%);
+}
+header .nav .cartBox__body--notE--img img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+header .nav .cartBox__body--notE--checkout {
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+header .nav .cartBox__body--notE .deleteB img {
+  width: 16px;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+header .nav .cartBox__body--notE .totalPrice {
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
 }
 
 main .main__card--image {
@@ -156,4 +217,42 @@ main .main__card--info--end .addCart {
 .selectedimg {
   opacity: 0.8;
   border: 3px solid hsl(26, 100%, 55%);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    position: relative;
+  }
+  header .nav .cartBox {
+    width: 75%;
+  }
+  header .nav__left--menu {
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 5;
+    left: -10%;
+    top: 0;
+    height: 100vh;
+    display: none;
+  }
+  header .nav__left--menu ul {
+    flex-direction: column;
+    padding-right: 3rem;
+    padding-top: 2rem;
+  }
+  header .nav__left--menu ul li a {
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .nav .cartBox {
+    width: 100%;
+  }
+  main .main__card--image {
+    width: 100%;
+  }
+  main .main__card--info {
+    width: 100%;
+  }
 }

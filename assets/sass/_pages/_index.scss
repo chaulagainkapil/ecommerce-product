@@ -12,7 +12,7 @@ header {
       &--menu {
         ul {
           list-style: none;
-          gap: 2rem;
+          gap: 1rem;
           li {
             a {
               position: relative;
@@ -32,6 +32,17 @@ header {
           }
         }
       }
+      &--button{
+        position: relative;
+        z-index: 6;
+        &--close{
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: none;
+          transform: translateY(-50%);
+        }
+      }
     }
     &__right {
       &--cart {
@@ -40,12 +51,69 @@ header {
           height: 1rem;
           object-fit: contain;
         }
+        cursor: pointer;
       }
       &--avatar {
         img {
           width: 2.5rem;
           height: 2.5rem;
           object-fit: contain;
+        }
+      }
+    }
+    .cartBox {
+      top: 2.6rem;
+      right: 0;
+      z-index: 2;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 1rem;
+      background: white;
+      width: 400px;
+      &__header {
+        border-bottom: 1px solid $gray__blue;
+        p {
+          font-weight: $font__bold;
+          color: $very__blue;
+        }
+      }
+      &__body {
+        &--empty {
+          p {
+            color: $dgray_blue;
+            font-weight: $font__bold;
+          }
+        }
+        &--notE {
+          color: $dgray_blue;
+          &--img {
+            img {
+              width: 3rem;
+              height: 3rem;
+              object-fit: cover;
+              border-radius: 0.5rem;
+            }
+          }
+          &--checkout{
+            background-color: $orange;
+            color: $white;
+            text-align: center;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            user-select: none;
+
+          }
+          .deleteB{
+            img{
+              width: 16px;
+              height: auto;
+              object-fit: contain;
+              cursor: pointer;
+            }
+          }
+          .totalPrice{
+            color: $very__blue;
+            font-weight: $font__bold;
+          }
         }
       }
     }

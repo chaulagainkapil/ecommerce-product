@@ -1,0 +1,56 @@
+@media screen and (max-width:768px) {
+    header{
+      position: relative;
+      .nav{
+        .cartBox{
+          width: 75%;
+        }
+        &__left{
+          &--menu{
+            position: absolute;
+            background-color: $white;
+            z-index: 5;
+            left: -10%;
+            top: 0;
+            height: 100vh;
+            display: none;
+            ul{
+              flex-direction: column;    
+              padding-right: 3rem;
+              padding-top: 2rem;
+              li{
+                a{
+                  color: $very__blue;
+                  font-weight: $font__bold;
+
+                }
+              }          
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width:576px) {
+    header{
+      .nav{
+        .cartBox{
+          width: 100%;
+        }
+        
+      }
+    }
+    main{
+      .main{
+        &__card{
+          &--image{
+            width: 100%;
+          }
+          &--info{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }

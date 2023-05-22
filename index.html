@@ -38,14 +38,22 @@
   <body>
     <header class="pt-5 pb-4">
       <div class="l_container">
-        <nav class="nav pb-3 d-flex align-items-center justify-content-between">
+        <nav class="nav position-relative pb-3 d-flex align-items-center justify-content-between">
           <div class="nav__left d-flex align-items-center gx-2">
+            <div class="nav__left--button d-block d-md-none pe-2">
+              <div class="nav__left--button--hamburger">
+                <img src="assets/images/icon-menu.svg" alt="open">
+              </div>
+              <div class="nav__left--button--close">
+                <img src="assets/images/icon-close.svg" alt="close">
+              </div>
+            </div>
             <div class="nav__left--logo">
               <a href="">
                 <img src="assets/images/logo.svg" alt="Sneaker Logo" />
               </a>
             </div>
-            <div class="nav__left--menu ps-4 d-none d-md-block">
+            <div class="nav__left--menu ps-4">
               <ul class="d-flex justify-content-between pb-0 mb-0">
                 <li><a href="">Collections</a></li>
                 <li><a href="">Men</a></li>
@@ -59,9 +67,7 @@
           <div class="nav__right">
             <div class="row align-items-center">
               <div class="nav__right--cart col-6">
-                <a href="">
                   <img src="assets/images/icon-cart.svg" alt="Cart Icon" />
-                </a>
               </div>
               <div class="nav__right--avatar col-6">
                 <a href="">
@@ -73,13 +79,46 @@
               </div>
             </div>
           </div>
+          <div class="cartBox position-absolute d-none">
+            <div class="cartBox__header">
+              <p class="px-3 py-3 mb-0">Cart</p>
+            </div>
+            <div class="cartBox__body">
+              <div class="cartBox__body--empty text-center px-3 py-5">
+                <p>Your cart is empty.</p>
+              </div>
+              <div class="cartBox__body--notE px-3 py-3 d-none">
+                <div class="row align-items-center">
+                  <div class="col-2 cartBox__body--notE--img">
+                    <img src="assets/images/image-product-1-thumbnail.jpg" alt="Product 1">
+                  </div>
+                  <div class="col-8">
+                    <div class="cartBox__body--notE--name">
+                      Fall Limited Edition Sneakers
+                    </div>
+                    <div class="cartBox__body--notE--price">
+                      <span class="basePrice" val=125>$125.00 x </span>
+                      <span class = "numItems">0 </span>
+                      <span class="totalPrice">0</span>
+                    </div>
+                  </div>
+                  <div class="deleteB col-2">
+                    <img src="assets/images/icon-delete.svg" alt="delete button">
+                  </div>
+                </div>
+                <div class="cartBox__body--notE--checkout py-2 my-3 w-100" >
+                  Checkout
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
 
     <main>
       <div class="l_container">
-        <div class="main px-5 py-lg-5">
+        <div class="main px-0 px-md-5 py-lg-5">
           <div class="main__card">
             <div class="row">
               <div class="col-12 col-lg-6">
