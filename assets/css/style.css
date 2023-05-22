@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.l_container {
+  width: 90%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+}
+a:hover {
+  color: hsl(220, 13%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+header .nav {
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+header .nav__left--logo img {
+  width: auto;
+  object-fit: contain;
+  height: 1.5rem;
+}
+header .nav__left--menu ul {
+  list-style: none;
+  gap: 2rem;
+}
+header .nav__left--menu ul li a {
+  position: relative;
+}
+header .nav__left--menu ul li a:hover::after {
+  content: "";
+  border-bottom: 3px solid hsl(26, 100%, 55%);
+  display: block;
+  position: absolute;
+  top: 46px;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+header .nav__right--cart img {
+  width: auto;
+  height: 1rem;
+  object-fit: contain;
+}
+header .nav__right--avatar img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+main .main__card--image {
+  width: 70%;
+  margin: auto;
+}
+main .main__card--image--upper {
+  padding-bottom: 2rem;
+}
+main .main__card--image--upper img {
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+main .main__card--image--lower img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+main .main__card--image--lower img:hover {
+  opacity: 50%;
+}
+main .main__card--info {
+  width: 70%;
+  margin: 5rem auto;
+}
+main .main__card--info h4 {
+  color: hsl(26, 100%, 55%);
+  font-size: medium;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main .main__card--info h1 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+main .main__card--info p {
+  color: hsl(219, 9%, 45%);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+main .main__card--info--cost .priceN {
+  gap: 1rem;
+}
+main .main__card--info--cost .priceN h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+main .main__card--info--cost .priceN span {
+  font-size: 1rem;
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: 700;
+}
+main .main__card--info--cost .priceO p {
+  color: hsl(219, 9%, 45%);
+  text-decoration: line-through;
+  font-weight: 700;
+}
+main .main__card--info--end .counter {
+  background-color: hsl(223, 64%, 98%);
+}
+main .main__card--info--end .counter .plus, main .main__card--info--end .counter .minus {
+  cursor: pointer;
+}
+main .main__card--info--end .addCart {
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selectedimg {
+  position: relative;
+}
+.selectedimg:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.7);
+}

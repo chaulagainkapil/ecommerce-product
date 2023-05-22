@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font__kumbh;
+}
+.l_container{
+    width: 90%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: $dgray_blue;
+    &:hover{
+        color: $very__blue;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
