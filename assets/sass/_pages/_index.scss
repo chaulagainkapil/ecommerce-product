@@ -37,10 +37,7 @@ header {
         z-index: 6;
         &--close{
           position: absolute;
-          top: 0;
-          left: 0;
           display: none;
-          transform: translateY(-50%);
         }
       }
     }

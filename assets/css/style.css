@@ -62,10 +62,7 @@ header .nav__left--button {
 }
 header .nav__left--button--close {
   position: absolute;
-  top: 0;
-  left: 0;
   display: none;
-  transform: translateY(-50%);
 }
 header .nav__right--cart {
   cursor: pointer;
@@ -223,6 +220,9 @@ main .main__card--info--end .addCart {
   header {
     position: relative;
   }
+  header .nav {
+    border-bottom: none;
+  }
   header .nav .cartBox {
     width: 75%;
   }
@@ -238,7 +238,7 @@ main .main__card--info--end .addCart {
   header .nav__left--menu ul {
     flex-direction: column;
     padding-right: 3rem;
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
   header .nav__left--menu ul li a {
     color: hsl(220, 13%, 13%);

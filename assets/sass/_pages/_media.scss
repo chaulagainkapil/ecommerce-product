@@ -2,6 +2,7 @@
     header{
       position: relative;
       .nav{
+        border-bottom: none;
         .cartBox{
           width: 75%;
         }
@@ -17,7 +18,7 @@
             ul{
               flex-direction: column;    
               padding-right: 3rem;
-              padding-top: 2rem;
+              padding-top: 4rem;
               li{
                 a{
                   color: $very__blue;
