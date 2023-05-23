@@ -34,10 +34,13 @@ header {
       }
       &--button{
         position: relative;
-        z-index: 6;
+        top: 0;
         &--close{
           position: absolute;
           display: none;
+          top: 0;
+          z-index: 6;
+
         }
       }
     }

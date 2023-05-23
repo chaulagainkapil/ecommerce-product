@@ -31,6 +31,12 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
     <!-- Links -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/main.js"></script>
@@ -38,14 +44,16 @@
   <body>
     <header class="pt-1 pt-md-5 pb-0 pb-md-4">
       <div class="l_container">
-        <nav class="nav position-relative pb-3 d-flex align-items-center justify-content-between">
+        <nav
+          class="nav position-relative pb-3 d-flex align-items-center justify-content-between"
+        >
           <div class="nav__left d-flex align-items-center gx-2">
             <div class="nav__left--button d-block d-md-none pe-2">
               <div class="nav__left--button--hamburger">
-                <img src="assets/images/icon-menu.svg" alt="open">
+                <img src="assets/images/icon-menu.svg" alt="open" />
               </div>
               <div class="nav__left--button--close">
-                <img src="assets/images/icon-close.svg" alt="close">
+                <img src="assets/images/icon-close.svg" alt="close" />
               </div>
             </div>
             <div class="nav__left--logo">
@@ -67,7 +75,7 @@
           <div class="nav__right">
             <div class="row align-items-center">
               <div class="nav__right--cart col-6">
-                  <img src="assets/images/icon-cart.svg" alt="Cart Icon" />
+                <img src="assets/images/icon-cart.svg" alt="Cart Icon" />
               </div>
               <div class="nav__right--avatar col-6">
                 <a href="">
@@ -90,23 +98,29 @@
               <div class="cartBox__body--notE px-3 py-3 d-none">
                 <div class="row align-items-center">
                   <div class="col-2 cartBox__body--notE--img">
-                    <img src="assets/images/image-product-1-thumbnail.jpg" alt="Product 1">
+                    <img
+                      src="assets/images/image-product-1-thumbnail.jpg"
+                      alt="Product 1"
+                    />
                   </div>
                   <div class="col-8">
                     <div class="cartBox__body--notE--name">
                       Fall Limited Edition Sneakers
                     </div>
                     <div class="cartBox__body--notE--price">
-                      <span class="basePrice" val=125>$125.00 x </span>
-                      <span class = "numItems">0 </span>
+                      <span class="basePrice" val="125">$125.00 x </span>
+                      <span class="numItems">0 </span>
                       <span class="totalPrice">0</span>
                     </div>
                   </div>
                   <div class="deleteB col-2">
-                    <img src="assets/images/icon-delete.svg" alt="delete button">
+                    <img
+                      src="assets/images/icon-delete.svg"
+                      alt="delete button"
+                    />
                   </div>
                 </div>
-                <div class="cartBox__body--notE--checkout py-2 my-3 w-100" >
+                <div class="cartBox__body--notE--checkout py-2 my-3 w-100">
                   Checkout
                 </div>
               </div>
@@ -124,26 +138,51 @@
               <div class="col-12 col-lg-6">
                 <div class="main__card--image d-flex flex-column">
                   <div class="main__card--image--upper">
-                    <img
-                      class="p1_big d-block"
-                      src="assets/images/image-product-1.jpg"
-                      alt="Product 1"
-                    />
-                    <img
+                    <a
+                      data-fancybox = "gallery"
+                      data-caption="Image1 Product1"
+                      data-src="assets/images/image-product-1.jpg"
+                    >
+                      <img
+                      class="p1_big d-block" 
+                        src="assets/images/image-product-1.jpg"
+                        alt="Image1 Product1"
+                      />
+                    </a>
+
+                    <a
+                      data-fancybox = "gallery"
+                      data-caption="Product1 Image2"
+                      data-src="assets/images/image-product-2.jpg"
+                    >
+                      <img
                       class="p2_big d-none"
-                      src="assets/images/image-product-2.jpg"
-                      alt="Product 2"
-                    />
-                    <img
+                        src="assets/images/image-product-2.jpg"
+                        alt="Product 2"
+                      />
+                    </a>
+                    <a
+                      data-fancybox = "gallery"
+                      data-caption="Product1 Image3"
+                      data-src="assets/images/image-product-3.jpg"
+                    >
+                      <img
                       class="p3_big d-none"
-                      src="assets/images/image-product-3.jpg"
-                      alt="Product 3"
-                    />
-                    <img
+                        src="assets/images/image-product-3.jpg"
+                        alt="Product1 Image3"
+                      />
+                    </a>
+                    <a
+                      data-fancybox = "gallery"
+                      data-caption="Product1 Image4"
+                      data-src="assets/images/image-product-4.jpg"
+                    >
+                      <img
                       class="p4_big d-none"
-                      src="assets/images/image-product-4.jpg"
-                      alt="Product 4"
-                    />
+                        src="assets/images/image-product-4.jpg"
+                        alt="Product1 Image4"
+                      />
+                    </a>
                   </div>
                   <div class="main__card--image--lower">
                     <div class="row">
