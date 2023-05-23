@@ -83,6 +83,10 @@ header .nav__right--avatar img {
   height: 2.5rem;
   object-fit: contain;
 }
+header .nav__right--avatar img:focus, header .nav__right--avatar img:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+}
 header .nav .cartBox {
   top: 2.6rem;
   right: 0;

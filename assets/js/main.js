@@ -49,7 +49,6 @@ $(function () {
     }
   }
 
-
   //add to cart
   let initialItems = parseInt($(".numItems").text());
 
