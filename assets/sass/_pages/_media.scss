@@ -35,6 +35,15 @@
           }
         }
       }
+      &__right{
+        &--avatar{
+          img{
+            &:hover, &:focus{
+              border: none;
+            }
+          }
+        }
+      }
     }
   }
 }

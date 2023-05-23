@@ -281,6 +281,9 @@ main .main__card--info--end .addCart {
     content: "";
     border-bottom: none;
   }
+  header .nav__right--avatar img:hover, header .nav__right--avatar img:focus {
+    border: none;
+  }
 }
 @media screen and (max-width: 576px) {
   header .nav .cartBox {
