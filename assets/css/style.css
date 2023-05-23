@@ -269,7 +269,7 @@ main .main__card--info--end .addCart {
   }
   header .nav__left--menu ul {
     flex-direction: column;
-    padding-right: 3rem;
+    padding-right: 6rem;
     padding-top: 4rem;
   }
   header .nav__left--menu ul li a {
