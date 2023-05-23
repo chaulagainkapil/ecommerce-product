@@ -202,6 +202,9 @@ main .main__card--info--end .counter {
   background-color: hsl(223, 64%, 98%);
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 main .main__card--info--end .counter .plus,
 main .main__card--info--end .counter .minus {
