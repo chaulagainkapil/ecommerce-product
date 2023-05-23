@@ -16,7 +16,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ### Screenshot
 
-**![](./screenshot.jpg)**
+![Screenshot](https://github.com/chaulagainkapil/ecommerce-product/blob/main/shoe-landing.netlify.app_.png)
 
 ### Links
 
