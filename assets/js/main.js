@@ -40,11 +40,10 @@ $(function () {
   });
 
   //notification
-  function checkNotif(){
-    if (initialItems == 0){
+  function checkNotif() {
+    if (initialItems == 0) {
       $(".cartNotif").css("display", "none");
-    }
-    else{
+    } else {
       $(".cartNotif").css("display", "flex");
     }
   }
@@ -67,6 +66,8 @@ $(function () {
       checkNotif();
       $(".cartNotif__value").text(initialItems);
     }
+    $(".counter__count").text(0);
+    count=0;
   });
 
   //deleteitem
