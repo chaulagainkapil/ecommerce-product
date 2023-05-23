@@ -7,7 +7,6 @@ $(function () {
     var string = $(this).attr("class"),
       t;
     t = string.substr(1, 1);
-    console.log(t);
     $(".p" + t + "_big").addClass("d-block");
     $(".p" + t + "_big").removeClass("d-none");
     $(".main__card--image--upper a img")
@@ -55,7 +54,6 @@ $(function () {
   let initialItems = parseInt($(".numItems").text());
 
   $(document).on("click", ".addCart", function () {
-    console.log("addddd");
     let numProd = parseInt($(".counter__count").text());
     let basePrice = 125;
     let finalPrice = 0;
@@ -66,7 +64,6 @@ $(function () {
       initialItems += numProd;
       $(".numItems").text(initialItems + " = ");
       finalPrice = parseInt(basePrice) * parseInt(initialItems);
-      console.log(finalPrice);
       $(".totalPrice").text("$" + finalPrice + ".00");
       checkNotif();
       $(".cartNotif__value").text(initialItems);
