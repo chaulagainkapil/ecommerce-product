@@ -40,6 +40,17 @@ $(function () {
     $(".cartBox").toggleClass("d-none");
   });
 
+  //notification
+  function checkNotif(){
+    if (initialItems == 0){
+      $(".cartNotif").css("display", "none");
+    }
+    else{
+      $(".cartNotif").css("display", "flex");
+    }
+  }
+
+
   //add to cart
   let initialItems = parseInt($(".numItems").text());
 
@@ -57,6 +68,8 @@ $(function () {
       finalPrice = parseInt(basePrice) * parseInt(initialItems);
       console.log(finalPrice);
       $(".totalPrice").text("$" + finalPrice + ".00");
+      checkNotif();
+      $(".cartNotif__value").text(initialItems);
     }
   });
 
@@ -67,6 +80,8 @@ $(function () {
     $(".cartBox__body--notE").removeClass("d-block");
     $(".cartBox__body--notE").addClass("d-none");
     initialItems = 0;
+    checkNotif();
+    $(".cartNotif__value").text(initialItems);
   });
 
   //navbar open close

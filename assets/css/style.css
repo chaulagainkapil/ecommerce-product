@@ -225,6 +225,25 @@ main .main__card--info--end .addCart {
   border: 3px solid hsl(26, 100%, 55%);
 }
 
+.cartNotif {
+  background-color: hsl(26, 100%, 55%);
+  color: hsl(0, 0%, 100%);
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  transform: translate(-75%, -25%);
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.cartNotif p {
+  font-size: 0.8vw;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 768px) {
   header {
     position: relative;

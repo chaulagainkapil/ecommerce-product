@@ -32,15 +32,14 @@ header {
           }
         }
       }
-      &--button{
+      &--button {
         position: relative;
         top: 0;
-        &--close{
+        &--close {
           position: absolute;
           display: none;
           top: 0;
           z-index: 6;
-
         }
       }
     }
@@ -93,24 +92,23 @@ header {
               border-radius: 0.5rem;
             }
           }
-          &--checkout{
+          &--checkout {
             background-color: $orange;
             color: $white;
             text-align: center;
             border-radius: 0.5rem;
             cursor: pointer;
             user-select: none;
-
           }
-          .deleteB{
-            img{
+          .deleteB {
+            img {
               width: 16px;
               height: auto;
               object-fit: contain;
               cursor: pointer;
             }
           }
-          .totalPrice{
+          .totalPrice {
             color: $very__blue;
             font-weight: $font__bold;
           }
@@ -223,4 +221,23 @@ main {
 .selectedimg {
   opacity: 0.8;
   border: 3px solid $orange;
+}
+
+.cartNotif {
+  background-color: $orange;
+  color: $white;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  transform: translate(-75%, -25%);
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 0.8vw;
+    font-weight: $font__bold;
+  }
 }
